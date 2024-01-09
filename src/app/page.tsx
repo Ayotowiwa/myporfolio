@@ -21,6 +21,7 @@ import hamburgerIcon from "../assets/hamburger-menu.svg";
 import personIcon from "../assets/person-icon.svg";
 import messageIcon from "../assets/message-icon.svg";
 import StarCircleIcon from "../assets/star-circle.svg";
+import linebelow from "../assets/linebelow.svg";
 import PSIcon from "../assets/adobe-photoshop-icon.png";
 import LinkedIcon from "../assets/linkedin-icon.svg";
 import WAIcon from "../assets/wa-icon.svg";
@@ -37,6 +38,7 @@ const caseStudies = [
     description:
       "Studyinc is an innovative eLearning website that provides a comprehensive platform for students to enhance their knowledge and skills in various academic fields. With its user-friendly interface and interactive features, Studyinc makes learning easy and engaging. ",
     link: "https://www.behance.net/gallery/166448315/STUDYINCCASE-STUDY",
+    img: linebelow,
   },
   {
     image: casestudy2,
@@ -44,6 +46,7 @@ const caseStudies = [
     description:
       "Go sounds is an online music streaming application which users can stream any music genre of their choice with different artist.",
     link: "https://www.behance.net/gallery/162145343/GOSOUNDS-CASE-STUDY",
+    img: linebelow,
   },
   {
     image: casestudy3,
@@ -51,6 +54,7 @@ const caseStudies = [
     description:
       "Alpha designs is a website designed for companies, business owners and entrepreneurs to easily get their business the graphics presence it needs it solves the challenge people usually go through when contacting the right designers when design services are needed.",
     link: "https://www.behance.net/gallery/162905137/ALPHA-DESIGNS-CASE-STUDY",
+    img: linebelow,
   },
   {
     image: casestudy4,
@@ -58,6 +62,7 @@ const caseStudies = [
     description:
       "Fitmeal is a mobile application designed to be used by users to choose and order meals that best suite their taste which include varieties of meal with different categories.",
     link: "https://www.behance.net/gallery/162464963/FITMEAL-(CASE-STUDY)",
+    img: linebelow,
   },
   {
     image: casestudy5,
@@ -65,6 +70,7 @@ const caseStudies = [
     description:
       "Agile.co is a platform that helps workers communicate and work  together effectively it provides a central location for team members to communicate, share files and communicate on projects.",
     link: "https://www.behance.net/gallery/167600553/Agileco-UX-case-study",
+    img: linebelow,
   },
 ];
 const designShots = [
@@ -240,7 +246,6 @@ export default function Home() {
               <p className=" w-fit ">PYTHON</p>
               <Image src={StarCircleIcon} alt=" star circle curve " />
               <p className=" w-fit "></p>
-
             </div>
           </div>
           <div className="py-20px bg-[#131313] rounded-[10px] border-solid border-[2px] border-[#FFFFFF1A] px-[30px] py-[20px]  ">
@@ -265,7 +270,6 @@ export default function Home() {
               <p className=" w-fit ">Git</p>
             </div>
           </div>
-        
         </div>
 
         <div className="what-i-do flex flex-col gap-[60px] items-center justify-center ">
@@ -275,36 +279,32 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap md:gap-[27px] gap-[20px] items-center justify-center ">
             <WhatDoCard
-              title="Concept Development"
-              description="Generate creative ideas and concepts for new products or enhancements to existing ones."
+              title="Frontend development"
+              description="Developing accessible and responsive website interfaces for end users to optimize user experience."
             />
             <WhatDoCard
-              title="Solve problems"
-              description="I contribute to crafting products that are tailored to tackle challenges and fulfill distinct requirements for both individuals and businesses through design."
-            />
-            <WhatDoCard
-              title="Prototyping"
-              description="Create prototypes or mockups to visualize and test design concepts before moving to production."
-            />
-            <WhatDoCard
-              title="User Research"
-              description="Conduct research to understand user needs, preferences, and pain points, often involving surveys, interviews, and observation"
-            />
-            <WhatDoCard
-              title="Iterative Design"
-              description="Continuously refine designs based on feedback and testing, ensuring the final product meets user expectations."
+              title="Backend development"
+              description="Building mechanisms and structures that ensure security, reliability and data storage for end user and website owner."
             />
             <WhatDoCard
               title="UI/UX Design"
               description="Design the product's interface and user interactions to ensure a seamless and user-friendly experience."
             />
             <WhatDoCard
+              title="Iterative Design"
+              description="Continuously refine designs based on feedback and testing, ensuring the final product meets user expectations."
+            />
+            <WhatDoCard
               title="Collaboration"
               description="Work closely with cross-functional teams, including engineers, marketers, and project managers, to bring the product from concept to reality."
             />
             <WhatDoCard
-              title="Design Validation"
-              description="Conduct usability testing and gather user feedback to validate and improve the design."
+              title="Concept Development"
+              description="Generate creative ideas and concepts for new products or enhancements to existing ones."
+            />
+            <WhatDoCard
+              title="Solve problems"
+              description="I contribute to crafting products that are tailored to tackle challenges and fulfill distinct requirements for both individuals and businesses through design."
             />
           </div>
         </div>
@@ -313,52 +313,21 @@ export default function Home() {
           id="portfolio"
           className="my-works flex flex-col gap-[80px] justify-center items-center "
         >
-          <div className=" flex flex-row md:text-[30px] text-[20px] px-[30px] py-[15px] font-semibold gap-[40px] mt-[20px] bg-[#141414] rounded-[10px] w-fit flex-auto items-center justify-center ">
-            <button
-              onClick={caseSelection}
-              className={
-                selectionState !== false
-                  ? " bg-[#1F1F1F] px-[20px] py-[5px] rounded-[10px] "
-                  : " bg-[#141414] "
-              }
-            >
-              Case Studies
-            </button>
-
-            <button
-              onClick={designSelection}
-              className={
-                selectionState !== true
-                  ? " bg-[#1F1F1F] px-[20px] py-[5px] rounded-[10px] "
-                  : " bg-[#141414] "
-              }
-            >
-              Design shots
-            </button>
+          <div className=" flex flex-col gap-[5px] items-center justify-center ">
+            <h1 className=" text-[30px] font-medium ">Development portfolio</h1>
+            <Image src={curveUnderIcon} alt=" underline curve " />
           </div>
-          {selectionState !== false ? (
-            <div className=" md:container mx-auto flex md:flex-col md:flex-wrap flex-col w-full md:gap-[80px] gap-[100px] justify-center space-y-[100x] ">
-              {caseStudies.map((content, index) => (
-                <CaseStudy
-                  key={index}
-                  image={content.image}
-                  title={content.title}
-                  description={content.description}
-                  link={content.link}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className=" md:container mx-auto flex flex-wrap flex-row w-full md:gap-[20px] lg:gap-[30px] gap-[40px] justify-center space-y-[100x] ">
-              {designShots.map((content, index) => (
-                <DesignShot
-                  key={index}
-                  image={content.image}
-                  title={content.title}
-                />
-              ))}
-            </div>
-          )}
+          <div className=" md:container mx-auto flex md:flex-col md:flex-wrap flex-col w-full md:gap-[80px] gap-[100px] justify-center space-y-[100x] ">
+            {caseStudies.map((content, index) => (
+              <CaseStudy
+                key={index}
+                image={content.image}
+                title={content.title}
+                description={content.description}
+                link={content.link}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="contact-me flex flex-col gap-[80px] ">
@@ -505,35 +474,47 @@ const WhatDoCard = (props: any) => {
 
 const CaseStudy = (props: any) => {
   return (
-    <div className=" flex md:gap-[35px] gap-[20px] md:max-w-[100%] max-w-[380px] mx-auto flex-row md:flex-nowrap flex-wrap md:text-left text-center ">
-      <Image
-        className=" md:max-w-[550px] md:mx-0 h-auto object-fill "
-        src={props.image}
-        alt=" case study image "
-      />
-      <div className=" flex flex-col md:gap-[22px] gap-[16px] max-w-[500px] items-left ">
-        <h1 className=" text-[30px] font-medium ">{props.title}</h1>
-        <p className=" md:text-[20px] text-[14px] w-[80%] md:mx-0 mx-auto leading-[30px]  ">
-          {props.description}
-        </p>
-        <a
-          href={props.link}
-          className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#7046DB] rounded-[5px] underline "
-        >
-          View case study
-        </a>
+    <div>
+      <div className=" flex md:gap-[35px] gap-[20px] md:max-w-[100%] max-w-[380px] mx-auto flex-row md:flex-nowrap flex-wrap md:text-left text-center ">
+        <Image
+          className=" md:max-w-[550px] md:mx-0 h-auto object-fill "
+          src={props.image}
+          alt=" case study image "
+        />
+        <div className=" flex flex-col md:gap-[22px] gap-[16px] max-w-[500px] items-left ">
+          <h1 className=" text-[30px] font-medium ">{props.title}</h1>
+          <p className=" md:text-[20px] text-[14px] w-[80%] md:mx-0 mx-auto leading-[30px]  ">
+            {props.description}
+          </p>
+          <a
+            href={props.link}
+            className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#0853f5] rounded-[5px] underline "
+          >
+            View project
+          </a>
+        </div>
+      </div>
+      <div>
+        <Image src={linebelow} alt="linebelow" />
       </div>
     </div>
   );
 };
 const DesignShot = (props: any) => {
   return (
-    <div className=" flex flex-col object-contain md:w-[530px] max-w-[380px] flex-auto bg-[#1F1F1F] rounded-[4px] overflow-hidden ">
-      <Image className=" h-[90%] " src={props.image} alt=" case study image " />
-      <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">
-        {props.title}
-      </p>
-      {/* <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">{props.title}</p> */}
+    <div>
+      <div className=" flex flex-col object-contain md:w-[530px] max-w-[380px] flex-auto bg-[#1F1F1F] rounded-[4px] overflow-hidden ">
+        <Image
+          className=" h-[90%] "
+          src={props.image}
+          alt=" case study image "
+        />
+        <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">
+          {props.title}
+        </p>
+        {/* <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">{props.title}</p> */}
+      </div>
+      <div></div>
     </div>
   );
 };
