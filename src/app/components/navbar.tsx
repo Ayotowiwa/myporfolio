@@ -31,8 +31,8 @@ export default function NavBar() {
             </a>
           </li>
           <li className="flex">
-            <Link onClick={closeMenu} href="/about">
-              About me
+            <Link onClick={closeMenu} href="../#resume">
+              My resume
             </Link>
           </li>
           <li>
@@ -59,8 +59,8 @@ export default function NavBar() {
               </a>
             </li>
             <li className="flex justify-center py-[14px] w-[80%] mx-auto rounded-[10px] ">
-              <Link onClick={closeMenu} href="/about">
-                About me
+              <Link onClick={closeMenu} href="#resume">
+                My resume
               </Link>
             </li>
             <li>

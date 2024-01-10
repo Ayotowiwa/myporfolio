@@ -27,6 +27,7 @@ import LinkedIcon from "../assets/linkedin-icon.svg";
 import WAIcon from "../assets/wa-icon.svg";
 import BehanceIcon from "../assets/behance-icon.svg";
 import FigmaIcon from "../assets/volumetric-figma-icon.png";
+import resumeImage from "../assets/cand-res-brief.png";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
@@ -34,31 +35,31 @@ import Link from "next/link";
 const caseStudies = [
   {
     image: casestudy1,
-    title: "Study Inc",
+    title: "Servv",
     description:
-      "Studyinc is an innovative eLearning website that provides a comprehensive platform for students to enhance their knowledge and skills in various academic fields. With its user-friendly interface and interactive features, Studyinc makes learning easy and engaging. ",
-    link: "https://www.behance.net/gallery/166448315/STUDYINCCASE-STUDY",
+      "Servv is a market place for artisan to post their various services for customers to hire. It serves as a means for both artisan and customer to locate each other conveniently. ",
+    link: "https://servvmarketplace.netlify.app/",
   },
   {
     image: casestudy2,
-    title: "Go Sounds",
+    title: "Gpt-3",
     description:
-      "Go sounds is an online music streaming application which users can stream any music genre of their choice with different artist.",
-    link: "https://www.behance.net/gallery/162145343/GOSOUNDS-CASE-STUDY",
+      "Gpt-3 is a website wher you find all sort of news about AI. Various updates and new features that are availablr in AI. All news AI is can be found here.",
+    link: "https://aiwebsite-kd.netlify.app/",
   },
   {
     image: casestudy3,
-    title: "Alpha Designs",
+    title: "C-bake",
     description:
-      "Alpha designs is a website designed for companies, business owners and entrepreneurs to easily get their business the graphics presence it needs it solves the challenge people usually go through when contacting the right designers when design services are needed.",
-    link: "https://www.behance.net/gallery/162905137/ALPHA-DESIGNS-CASE-STUDY",
+      "C-bake is a website for a bakery in which they post their various products. It serves as a means for customers to purchase and also for advertisement of their various new products.",
+    link: "https://bakerywebsite-kd.netlify.app/",
   },
   {
     image: casestudy4,
-    title: "Fitmeal",
+    title: "Snap",
     description:
-      "Fitmeal is a mobile application designed to be used by users to choose and order meals that best suite their taste which include varieties of meal with different categories.",
-    link: "https://www.behance.net/gallery/162464963/FITMEAL-(CASE-STUDY)",
+    "Snap is a website developed to link up various tech individuals to work remotely. If you have a product or you require the knowhow of people in the tech field, snap is the site for you.  ",
+    link: "https://snap-kd.netlify.app/",
   },
   {
     image: casestudy5,
@@ -239,8 +240,6 @@ export default function Home() {
               <p className=" w-fit ">TYPESCRIPT</p>
               <Image src={StarCircleIcon} alt=" mcircle curve " />
               <p className=" w-fit ">PYTHON</p>
-              <Image src={StarCircleIcon} alt=" star circle curve " />
-              <p className=" w-fit "></p>
             </div>
           </div>
           <div className="py-20px bg-[#131313] rounded-[10px] border-solid border-[2px] border-[#FFFFFF1A] px-[30px] py-[20px]  ">
@@ -299,7 +298,7 @@ export default function Home() {
             />
             <WhatDoCard
               title="Solve problems"
-              description="I contribute to crafting products that are tailored to tackle challenges and fulfill distinct requirements for both individuals and businesses through design."
+              description="I contribute to crafting products that are tailored to tackle challenges and fulfill distinct requirements for both individuals and businesses."
             />
           </div>
         </div>
@@ -324,7 +323,20 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div className="socials flex flex-col md:gap-[60px] gap-[30px] text-[14px]  ">
+        <div className=" flex flex-col gap-[5px] items-center justify-center " id="resume">
+          <h1 className=" text-[30px] font-medium ">My Resume</h1>
+          <Image src={curveUnderIcon} alt=" underline curve " />
+        </div>
+        <div className="flex gap-[128px] justify-center items-center ">
 
+          <Image
+            className=" md:flex "
+            src={resumeImage}
+            alt="contact person avatar"
+          />
+        </div>
+      </div>
         <div className="contact-me flex flex-col gap-[80px] ">
           <div className=" flex flex-col gap-[5px] items-center justify-center ">
             <h1 className=" text-[30px] font-medium ">Contact me</h1>
@@ -407,7 +419,6 @@ export default function Home() {
             />
           </div>
         </div>
-
         <div className="socials flex flex-col gap-[60px] ">
           <div className=" flex flex-col gap-[5px] items-center justify-center ">
             <h1 className=" text-[30px] font-medium ">Socials</h1>
@@ -443,7 +454,7 @@ export default function Home() {
                 src={BehanceIcon}
                 alt=" behance social media icon"
               />
-              <a className=" underline " href="https://wa.link/dbk5bf">
+              <a className=" underline " href="">
                 Ayotowiwa
               </a>
             </div>

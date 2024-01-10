@@ -86,7 +86,7 @@ export default function AboutPage() {
               src={PSIcon}
               alt="tools used icon"
             />
-            <p>Adobe Ps</p>
+            <p>VS code</p>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
           <Image src={curveUnderIcon} alt=" underline curve " />
         </div>
         <div className="flex gap-[128px] justify-center items-center ">
-          <form
+          {/* <form
             id="contact-form"
             action="submit"
             // method="post"
@@ -183,7 +183,7 @@ export default function AboutPage() {
               onSubmit={handleSubmit}
               className=" cursor-pointer bg-[#7046DB] text-[20px] text-[#ffffff] py-[14px] px-[20px] w-fit md:mx-0 mx-auto rounded-[5px] "
             />
-          </form>
+          </form> */}
           <Image
             className=" hidden md:flex "
             src={resumeImage}
