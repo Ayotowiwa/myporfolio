@@ -328,13 +328,19 @@ export default function Home() {
           <h1 className=" text-[30px] font-medium ">My Resume</h1>
           <Image src={curveUnderIcon} alt=" underline curve " />
         </div>
-        <div className="flex gap-[128px] justify-center items-center ">
+        <div className="flex flex-col gap-[30px] justify-center items-center ">
 
           <Image
             className=" md:flex "
             src={resumeImage}
             alt="contact person avatar"
           />
+           <a
+            href=""
+            className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#0853f5] rounded-[5px] underline "
+          >
+            View my resume
+          </a>
         </div>
       </div>
         <div className="contact-me flex flex-col gap-[80px] ">
