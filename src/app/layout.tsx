@@ -24,7 +24,7 @@ export default function RootLayout({
         <NavBar />
         <div className=" my-[120px] text-white " >{children}</div>
         <footer className=" text-white bg-[#FFFFFF1A] flex justify-center items-center py-[16px] w-full text-[20px] ">
-        Adesipe Tomide © 2024
+        ThePackage © 2024
       </footer>
       </body>
     </html>

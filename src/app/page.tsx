@@ -38,7 +38,6 @@ const caseStudies = [
     description:
       "Studyinc is an innovative eLearning website that provides a comprehensive platform for students to enhance their knowledge and skills in various academic fields. With its user-friendly interface and interactive features, Studyinc makes learning easy and engaging. ",
     link: "https://www.behance.net/gallery/166448315/STUDYINCCASE-STUDY",
-    img: linebelow,
   },
   {
     image: casestudy2,
@@ -46,7 +45,6 @@ const caseStudies = [
     description:
       "Go sounds is an online music streaming application which users can stream any music genre of their choice with different artist.",
     link: "https://www.behance.net/gallery/162145343/GOSOUNDS-CASE-STUDY",
-    img: linebelow,
   },
   {
     image: casestudy3,
@@ -54,7 +52,6 @@ const caseStudies = [
     description:
       "Alpha designs is a website designed for companies, business owners and entrepreneurs to easily get their business the graphics presence it needs it solves the challenge people usually go through when contacting the right designers when design services are needed.",
     link: "https://www.behance.net/gallery/162905137/ALPHA-DESIGNS-CASE-STUDY",
-    img: linebelow,
   },
   {
     image: casestudy4,
@@ -62,7 +59,6 @@ const caseStudies = [
     description:
       "Fitmeal is a mobile application designed to be used by users to choose and order meals that best suite their taste which include varieties of meal with different categories.",
     link: "https://www.behance.net/gallery/162464963/FITMEAL-(CASE-STUDY)",
-    img: linebelow,
   },
   {
     image: casestudy5,
@@ -70,7 +66,6 @@ const caseStudies = [
     description:
       "Agile.co is a platform that helps workers communicate and work  together effectively it provides a central location for team members to communicate, share files and communicate on projects.",
     link: "https://www.behance.net/gallery/167600553/Agileco-UX-case-study",
-    img: linebelow,
   },
 ];
 const designShots = [
@@ -402,7 +397,7 @@ export default function Home() {
                 typeof="submit"
                 value="Send me a message"
                 onSubmit={handleSubmit}
-                className=" cursor-pointer bg-[#7046DB] text-[20px] text-[#ffffff] py-[14px] px-[20px] w-fit md:mx-0 mx-auto rounded-[5px] "
+                className=" cursor-pointer bg-[#0853f5] text-[20px] text-[#ffffff] py-[14px] px-[20px] w-fit md:mx-0 mx-auto rounded-[5px] "
               />
             </form>
             <Image
@@ -427,9 +422,9 @@ export default function Home() {
               />
               <a
                 className=" underline "
-                href="https://www.linkedin.com/in/adesipe-tomide/"
+                href="https://www.linkedin.com/in/ayotomiwa-atanniyi-15b4a3254?"
               >
-                John Tomide
+                Emmanuel Ayotomiwa
               </a>
             </div>
             <div className=" flex gap-[15px] items-center justify-center ">
@@ -439,7 +434,7 @@ export default function Home() {
                 alt="whatsapp social media icon"
               />
               <a className=" underline " href="https://wa.link/dbk5bf">
-                +2348133905285
+                +2348036818230
               </a>
             </div>
             <div className=" flex gap-[15px] items-center justify-center ">
@@ -449,7 +444,7 @@ export default function Home() {
                 alt=" behance social media icon"
               />
               <a className=" underline " href="https://wa.link/dbk5bf">
-                John Tomide
+                Ayotowiwa
               </a>
             </div>
           </div>
@@ -474,7 +469,7 @@ const WhatDoCard = (props: any) => {
 
 const CaseStudy = (props: any) => {
   return (
-    <div>
+    <div className=" flex flex-col gap-[40px]">
       <div className=" flex md:gap-[35px] gap-[20px] md:max-w-[100%] max-w-[380px] mx-auto flex-row md:flex-nowrap flex-wrap md:text-left text-center ">
         <Image
           className=" md:max-w-[550px] md:mx-0 h-auto object-fill "
@@ -494,7 +489,7 @@ const CaseStudy = (props: any) => {
           </a>
         </div>
       </div>
-      <div>
+      <div className="mt-50px mx-auto">
         <Image src={linebelow} alt="linebelow" />
       </div>
     </div>
