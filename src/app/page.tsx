@@ -472,7 +472,7 @@ export default function Home() {
 
 const WhatDoCard = (props: any) => {
   return (
-    <div className=" flex flex-col w-[160px] md:p-[24px] p-[16px] gap-[8px] border-solid border-[2px] border-[#FFFFFF1A] md:w-[270px]  md:min-h-[280px] h-[290px] flex-auto hover:bg-[#ffffff2f] bg-[#131313] rounded-[10px] ">
+    <div className=" flex flex-col w-[160px] md:p-[24px] p-[16px] gap-[8px] border-solid border-[2px] border-[#FFFFFF1A] md:w-[270px]  md:min-h-[280px] h-[320px] flex-auto hover:bg-[#ffffff2f] bg-[#131313] rounded-[10px] ">
       <h1 className=" md:text-[20px] text-[18px] font-semibold w-full ">
         {props.title}
       </h1>
