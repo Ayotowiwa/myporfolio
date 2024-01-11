@@ -329,14 +329,13 @@ export default function Home() {
           <Image src={curveUnderIcon} alt=" underline curve " />
         </div>
         <div className="flex flex-col gap-[30px] justify-center items-center ">
-
           <Image
             className=" md:flex "
             src={resumeImage}
             alt="contact person avatar"
           />
            <a
-            href=""
+            href="/emmaCV.pdf"
             className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#0853f5] rounded-[5px] underline "
           >
             View my resume
