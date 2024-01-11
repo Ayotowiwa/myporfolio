@@ -330,7 +330,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-[30px] justify-center items-center ">
           <Image
-            className=" md:flex "
+            className=" md:flex w-[250px] md:w-[auto]"
             src={resumeImage}
             alt="contact person avatar"
           />
@@ -493,7 +493,7 @@ const CaseStudy = (props: any) => {
           alt=" case study image "
         />
         <div className=" flex flex-col md:gap-[22px] gap-[16px] max-w-[500px] items-left ">
-          <h1 className=" text-[30px] font-medium ">{props.title}</h1>
+          <h1 className=" text-[22px] md:text-[30px] font-medium ">{props.title}</h1>
           <p className=" md:text-[20px] text-[14px] w-[80%] md:mx-0 mx-auto leading-[30px]  ">
             {props.description}
           </p>
