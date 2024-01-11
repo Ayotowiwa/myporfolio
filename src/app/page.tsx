@@ -58,7 +58,7 @@ const caseStudies = [
     image: casestudy4,
     title: "Snap",
     description:
-    "Snap is a website developed to link up various tech individuals to work remotely. If you have a product or you require the knowhow of people in the tech field, snap is the site for you.  ",
+      "Snap is a website developed to link up various tech individuals to work remotely. If you have a product or you require the knowhow of people in the tech field, snap is the site for you.  ",
     link: "https://snap-kd.netlify.app/",
   },
   {
@@ -324,24 +324,27 @@ export default function Home() {
           </div>
         </div>
         <div className="socials flex flex-col md:gap-[60px] gap-[30px] text-[14px]  ">
-        <div className=" flex flex-col gap-[5px] items-center justify-center " id="resume">
-          <h1 className=" text-[30px] font-medium ">My Resume</h1>
-          <Image src={curveUnderIcon} alt=" underline curve " />
-        </div>
-        <div className="flex flex-col gap-[30px] justify-center items-center ">
-          <Image
-            className=" md:flex w-[250px] md:w-[auto]"
-            src={resumeImage}
-            alt="contact person avatar"
-          />
-           <a
-            href="/emmaCV.pdf"
-            className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#0853f5] rounded-[5px] underline "
+          <div
+            className=" flex flex-col gap-[5px] items-center justify-center "
+            id="resume"
           >
-            View my resume
-          </a>
+            <h1 className=" text-[30px] font-medium ">My Resume</h1>
+            <Image src={curveUnderIcon} alt=" underline curve " />
+          </div>
+          <div className="flex flex-col gap-[30px] justify-center items-center ">
+            <Image
+              className=" md:flex w-[250px] md:w-[auto]"
+              src={resumeImage}
+              alt="contact person avatar"
+            />
+            <a
+              href="/emmaCV.pdf"
+              className=" px-[20px] md:mx-0 mx-auto w-fit py-[15px] bg-[#0853f5] rounded-[5px] underline "
+            >
+              View my resume
+            </a>
+          </div>
         </div>
-      </div>
         <div className="contact-me flex flex-col gap-[80px] ">
           <div className=" flex flex-col gap-[5px] items-center justify-center ">
             <h1 className=" text-[30px] font-medium ">Contact me</h1>
@@ -449,7 +452,10 @@ export default function Home() {
                 src={WAIcon}
                 alt="whatsapp social media icon"
               />
-              <a className=" underline " href="https://wa.link/dbk5bf">
+              <a
+                className=" underline "
+                href="https://wa.link/biwegt"
+              >
                 +2348036818230
               </a>
             </div>
@@ -493,7 +499,9 @@ const CaseStudy = (props: any) => {
           alt=" case study image "
         />
         <div className=" flex flex-col md:gap-[22px] gap-[16px] max-w-[500px] items-left ">
-          <h1 className=" text-[22px] md:text-[30px] font-medium ">{props.title}</h1>
+          <h1 className=" text-[22px] md:text-[30px] font-medium ">
+            {props.title}
+          </h1>
           <p className=" md:text-[20px] text-[14px] w-[80%] md:mx-0 mx-auto leading-[30px]  ">
             {props.description}
           </p>
