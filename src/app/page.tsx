@@ -1,5 +1,5 @@
 "use client";
-import AboutPage from "./about/page";
+
 
 import WaveIcon from "../assets/wave-icon.svg";
 
@@ -9,12 +9,6 @@ import casestudy3 from "../assets/casestudy-3.png";
 import casestudy4 from "../assets/casestudy-4.png";
 import casestudy5 from "../assets/casestudy-5.png";
 import mypicture from "../assets/Tommy.jpg";
-import dshot1 from "../assets/dshot-1.png";
-import dshot2 from "../assets/dshot-2.png";
-import dshot3 from "../assets/dshot-3.png";
-import dshot4 from "../assets/dshot-4.png";
-import dshot5 from "../assets/dshot-5.png";
-import dshot6 from "../assets/dshot-6.png";
 import contactImage from "../assets/contact-image.png";
 import curveUnderIcon from "../assets/curve-underline-icon.svg";
 import hamburgerIcon from "../assets/hamburger-menu.svg";
@@ -69,47 +63,11 @@ const caseStudies = [
     link: "https://www.behance.net/gallery/167600553/Agileco-UX-case-study",
   },
 ];
-const designShots = [
-  {
-    image: dshot1,
-    title: "Study Inc; An e-learning website",
-  },
-  {
-    image: dshot2,
-    title: "A mobile streaming application website",
-  },
-  {
-    image: dshot3,
-    title: "Cadence: a cryptocurrency website ",
-  },
-  {
-    image: dshot4,
-    title: "E-commerce website for furniture",
-  },
-  {
-    image: dshot5,
-    title: "Hackerace: A cybersecurity website",
-  },
-  {
-    image: dshot6,
-    title: "Cadence: a cryptocurrency website",
-  },
-];
 
 export default function Home() {
-  const [selectionState, setSelectionState] = useState(true);
-  const [validationState, setValidatiionState] = useState(true);
+   const [validationState, setValidatiionState] = useState(true);
 
   //   const [buttonStyle, setButtonStyle] = useState(false);
-
-  const designSelection = () => {
-    console.log("design buttton");
-    setSelectionState(false);
-  };
-  const caseSelection = () => {
-    console.log("casebuttton");
-    setSelectionState(true);
-  };
 
   // FORM VALIDATION
   const [formData, setFormData] = useState({
@@ -516,24 +474,6 @@ const CaseStudy = (props: any) => {
       <div className="mt-50px mx-auto">
         <Image src={linebelow} alt="linebelow" />
       </div>
-    </div>
-  );
-};
-const DesignShot = (props: any) => {
-  return (
-    <div>
-      <div className=" flex flex-col object-contain md:w-[530px] max-w-[380px] flex-auto bg-[#1F1F1F] rounded-[4px] overflow-hidden ">
-        <Image
-          className=" h-[90%] "
-          src={props.image}
-          alt=" case study image "
-        />
-        <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">
-          {props.title}
-        </p>
-        {/* <p className=" text-[20px] py-[10px] text-center md:h-auto h-[50px] ">{props.title}</p> */}
-      </div>
-      <div></div>
     </div>
   );
 };
