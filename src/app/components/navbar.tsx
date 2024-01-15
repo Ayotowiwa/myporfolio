@@ -64,7 +64,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <div className="flex w-fit mx-auto border-solid fill-none p-[2px] bg-gradient-to-r from-[#F07175] to-[#6B58EF]  rounded-[6px] ">
+              <div className="flex w-fit mx-auto border-solid fill-none p-[2px] bg-gradient rounded-[6px] ">
                 <button className="flex px-[18px] py-[14px] bg-[#0F0F0F] h-auto w-full justify-center rounded-[6px] ">
                   Contact me
                 </button>
