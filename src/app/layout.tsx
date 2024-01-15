@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Tomiwa Porfolio",
-  description: "Website portfolio of Adesipe tomide",
+  description: "Website portfolio of Atanniyi Ayotomiwa",
 };
 
 export default function RootLayout({
