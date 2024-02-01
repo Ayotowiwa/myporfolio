@@ -55,13 +55,13 @@ const caseStudies = [
       "Snap is a website developed to link up various tech individuals to work remotely. If you have a product or you require the knowhow of people in the tech field, snap is the site for you.  ",
     link: "https://snap-kd.netlify.app/",
   },
-  {
-    image: casestudy5,
-    title: "Agile.co",
-    description:
-      "Agile.co is a platform that helps workers communicate and work  together effectively it provides a central location for team members to communicate, share files and communicate on projects.",
-    link: "https://www.behance.net/gallery/167600553/Agileco-UX-case-study",
-  },
+  // {
+  //   image: casestudy5,
+  //   title: "Agile.co",
+  //   description:
+  //     "Agile.co is a platform that helps workers communicate and work  together effectively it provides a central location for team members to communicate, share files and communicate on projects.",
+  //   link: "https://www.behance.net/gallery/167600553/Agileco-UX-case-study",
+  // },
 ];
 
 export default function Home() {
@@ -158,7 +158,7 @@ export default function Home() {
               I am a developer with understanding of methods geared towards
               creating innovative and user-centered solutions to solve web
               development challenges as well as solving problems using
-              Javascript, Typescript, MongoDB and so much more
+              Javascript, Typescript and so much more
             </p>
             <div className="flex items-center md:justify-start justify-center gap-[10px] mb-[40px] ">
               <Image
@@ -196,8 +196,8 @@ export default function Home() {
               <p className=" w-fit ">JAVASRIPT</p>
               <Image src={StarCircleIcon} alt=" mcircle curve " />
               <p className=" w-fit ">TYPESCRIPT</p>
-              <Image src={StarCircleIcon} alt=" mcircle curve " />
-              <p className=" w-fit ">PYTHON</p>
+              {/* <Image src={StarCircleIcon} alt=" mcircle curve " />
+              <p className=" w-fit ">PYTHON</p> */}
             </div>
           </div>
           <div className="py-20px bg-[#131313] rounded-[10px] border-solid border-[2px] border-[#FFFFFF1A] px-[30px] py-[20px]  ">
@@ -211,8 +211,8 @@ export default function Home() {
               <Image src={StarCircleIcon} alt=" mcircle curve " />
               <p className=" w-fit ">Next</p>
               <Image src={StarCircleIcon} alt=" star circle curve " />
-              <p className=" w-fit ">MongoDB</p>
-              <Image src={StarCircleIcon} alt=" star circle curve " />
+              {/* <p className=" w-fit ">MongoDB</p>
+              <Image src={StarCircleIcon} alt=" star circle curve " /> */}
               <p className=" w-fit ">Figma</p>
               <Image src={StarCircleIcon} alt=" star circle curve " />
               <p className=" w-fit ">Tailwind</p>
