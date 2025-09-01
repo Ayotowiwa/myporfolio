@@ -303,8 +303,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="contact-me flex flex-col gap-[80px] ">
-          <div className=" flex flex-col gap-[5px] items-center justify-center ">
+  <div id="contact" className="contact-me flex flex-col gap-[80px] ">
+          <div className=" flex flex-col gap-[5px] items-center justify-center "
+          id="contact">
             <h1 className=" text-[30px] font-medium ">Contact me</h1>
             <Image src={curveUnderIcon} alt=" underline curve " />
           </div>

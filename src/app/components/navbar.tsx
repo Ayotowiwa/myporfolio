@@ -63,12 +63,16 @@ export default function NavBar() {
                 My resume
               </Link>
             </li>
-            <li>
+            <li><Link onClick={closeMenu} href="#contact">
               <div className="flex w-fit mx-auto border-solid fill-none p-[2px] bg-gradient rounded-[6px] ">
                 <button className="flex px-[18px] py-[14px] bg-[#0F0F0F] h-auto w-full justify-center rounded-[6px] ">
-                  Contact me
+                  
+                  
+                    Contact me
+              
                 </button>
               </div>
+              </Link>
             </li>
           </ul>
         )}
